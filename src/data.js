@@ -20,28 +20,22 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Manas Goyal",
+  title: "Hi all, I'm Manas",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / React Native ."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1M4gMH1AQb9pAbNFM02STY_4fNn8195Vc/view?usp=sharing://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  github: "https://github.com/manug18",
+  linkedin: "https://www.linkedin.com/in/manas-goyal-a841311b0/",
+  gmail: "manasgoyal913@gmail.com",
   display: true, // Set true to display this section, defaults to false
 };
 
@@ -54,10 +48,7 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    ),
+    emoji("⚡ Develop native mobile applications"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -66,16 +57,13 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5",
+      fontAwesomeClassname: "fa-solid fa-user",
     },
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt",
     },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass",
-    },
+
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js",
@@ -84,80 +72,94 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react",
     },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node",
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift",
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm",
-    },
+
     {
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database",
     },
     {
-      skillName: "aws",
+      skillName: "React Native",
       fontAwesomeClassname: "fab fa-aws",
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire",
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python",
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker",
     },
   ],
   display: true, // Set false to hide this section, defaults to true
 };
-
-// Education Section
 
 const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "R V College of Engineering",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/rvcollege.png"),
       subHeader: "Bachelor Of Engineering",
       duration: "August 2019 - July 2023",
       desc: "First Class with Distinction",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      ],
+    },
+    {
+      schoolName: "Divine International Academy",
+      logo: require("./assets/images/rvcollege.png"),
+      subHeader: "XII Standard (CBSE)",
+      duration: "July 2016 - July 2018",
+      desc: "Percentage:92%",
+    },
+    {
+      schoolName: "Maa Anjani Sr. Sec. School",
+      logo: require("./assets/images/rvcollege.png"),
+      subHeader: "X Standard (CBSE)",
+      duration: "August 2014 - July 2016",
+      desc: "CGPA:9.4",
     },
   ],
 };
-
-// Your top 3 proficient stacks/tech experience
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%", //Insert relative proficiency in percentage
+      Stack: "Frontend",
+      progressPercentage: "90%",
+    },
+    {
+      Stack: "React Native",
+      progressPercentage: "60%",
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%",
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%",
+      progressPercentage: "50%",
     },
   ],
   displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+};
+
+const bigProjects = {
+  title: "Personal Projects",
+  subtitle: "Some of the recent personal projects",
+  projects: [
+    {
+      image: require("./assets/images/download.png"),
+      projectName: "Job Finder",
+      projectDesc: "React Native App to help users to search for jobs ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/download.png"),
+      projectName: "Income Tax Calculator",
+      projectDesc:
+        "An Android App to help users to calculate the net payable tax ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "",
+        },
+      ],
+    },
+  ],
+  display: true, // Set false to hide this section, defaults to true
 };
 
 // Work experience section
@@ -168,114 +170,32 @@ const workExperiences = {
     {
       role: "Full Stack Engineer",
       company: "SleevesUp",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/sleevesup.webp"),
       date: "March 2023 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "Studio Prohire",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Led the end-to-end development of the platform for the examiner view, spearheading both frontend and backend tasks.",
+        "Designed and implemented a responsive frontend for examiner view using Typescript, with a modern React.js framework in the Material UI.",
+        "Developed dynamic exam creation functionality, allowing examiners to customize sections in real-time",
+        "Implemented advanced filters to enhance question search efficiency based on various criteria and giving them the option to shuffle questions randomnly.",
+        "Created a scheduling feature, enabling examiners to effortlessly plan and manage exam sessions",
+        "Architected and implemented the backend system for examinee view, ensuring seamless integration of various components.",
+        "Integrated the Judge0 API for code evaluation, enabling real-time code execution and saving during the exam",
+        "Developed a secure exam link generation system, granting examinees access to their unique  exams",
+        "Implemented image proctoring, capturing examinees' images every three seconds for enhanced exam integrity and securely storing it in Amazon S3",
       ],
     },
   ],
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true, // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      //   image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/",
-        },
-        //  you can add extra buttons here.
-      ],
-    },
-  ],
-  display: true, // Set false to hide this section, defaults to true
-};
-
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing",
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing",
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html",
-        },
-      ],
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en",
-        },
-      ],
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        { name: "Certification", url: "" },
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/",
-        },
-      ],
-    },
-  ],
-  display: true, // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com",
+    "Discuss a project or just want to say hi? My Inbox is open for all",
+
+  number: "+91-6397775264",
+  email_address: "manasgoyal913@gmail.com",
+  value: "Website is work in progress",
 };
 
 // Twitter Section
@@ -296,9 +216,7 @@ export {
   educationInfo,
   techStack,
   workExperiences,
-  openSource,
   bigProjects,
-  achievementSection,
   contactInfo,
   twitterDetails,
   isHireable,
