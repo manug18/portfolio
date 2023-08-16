@@ -97,14 +97,14 @@ const educationInfo = {
     },
     {
       schoolName: "Divine International Academy",
-      logo: require("./assets/images/rvcollege.png"),
+      logo: require("./assets/images/dia.png"),
       subHeader: "XII Standard (CBSE)",
       duration: "July 2016 - July 2018",
       desc: "Percentage:92%",
     },
     {
       schoolName: "Maa Anjani Sr. Sec. School",
-      logo: require("./assets/images/rvcollege.png"),
+      logo: require("./assets/images/maa.png"),
       subHeader: "X Standard (CBSE)",
       duration: "August 2014 - July 2016",
       desc: "CGPA:9.4",
